@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="WIN10迁移C盘和崩溃还原系统总结这几天为了清理C盘一直动系统的文件，导致经常重启，其中主要还是迁移C盘Users数据到其他非系统盘操作不当导致开机系统加载不了用户信息，下面具体记录这两方面。  迁移资料的关键还是利用硬链接将物理地址位于其他盘的Users用户信息映射到C盘的逻辑名上。下面只简单记录一下命令。  最关键的还是利用系统的保命文件———Backup.wim重刷系统一个通过Dism++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重装系统">
+<meta property="og:url" content="http://yoursite.com/2020/03/07/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="WIN10迁移C盘和崩溃还原系统总结这几天为了清理C盘一直动系统的文件，导致经常重启，其中主要还是迁移C盘Users数据到其他非系统盘操作不当导致开机系统加载不了用户信息，下面具体记录这两方面。  迁移资料的关键还是利用硬链接将物理地址位于其他盘的Users用户信息映射到C盘的逻辑名上。下面只简单记录一下命令。  最关键的还是利用系统的保命文件———Backup.wim重刷系统一个通过Dism++">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191022130842551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dhd2FpblRreQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191022142147367.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dhd2FpblRreQ==,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20191022142851436.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dhd2FpblRreQ==,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-03-06T17:29:04.000Z">
+<meta property="article:modified_time" content="2020-03-06T17:29:33.926Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20191022130842551.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dhd2FpblRreQ==,size_16,color_FFFFFF,t_70">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/03/07/重装系统/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>重装系统 | Hexo</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,9 +221,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/07/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/" itemprop="url">重装系统</a></h1>
+          <h1 class="post-title" itemprop="name headline">重装系统</h1>
         
 
         <div class="post-meta">
@@ -298,9 +303,7 @@
       
 
       
-        
-          
-            <h1 id="WIN10迁移C盘和崩溃还原系统总结"><a href="#WIN10迁移C盘和崩溃还原系统总结" class="headerlink" title="WIN10迁移C盘和崩溃还原系统总结"></a>WIN10迁移C盘和崩溃还原系统总结</h1><p>这几天为了清理C盘一直动系统的文件，导致经常重启，其中主要还是迁移C盘Users数据到其他非系统盘操作不当导致开机系统加载不了用户信息，下面具体记录这两方面。</p>
+        <h1 id="WIN10迁移C盘和崩溃还原系统总结"><a href="#WIN10迁移C盘和崩溃还原系统总结" class="headerlink" title="WIN10迁移C盘和崩溃还原系统总结"></a>WIN10迁移C盘和崩溃还原系统总结</h1><p>这几天为了清理C盘一直动系统的文件，导致经常重启，其中主要还是迁移C盘Users数据到其他非系统盘操作不当导致开机系统加载不了用户信息，下面具体记录这两方面。</p>
 <ol>
 <li><p>迁移资料的关键还是利用硬链接将物理地址位于其他盘的Users用户信息映射到C盘的逻辑名上。下面只简单记录一下命令。</p>
 </li>
@@ -328,8 +331,6 @@
 <p>到此一个完整还原周期完成，平时尽量养成将数据置于非系统盘之下的习惯，这样除了减小C盘容量压力，也可使重装系统带来的影响最小，某种程度保证自己电脑使用稳定性。</p>
 <p> 第一次文档记录，为以后系统崩溃提供解决办法，也是向大家分享折腾了两天的错误经验，虽然都是可以google到的方法，但收集信息排错需要时间精力。<strong>格式化C区-&gt;dos还原系统</strong>是个人使用最快捷方便的恢复操作，<br>若有错误或纰漏多多指正，还有，小白谨慎使用以上方法，我不能保证错误操作对系统不会造成损失。</p>
 
-          
-        
       
     </div>
     
@@ -346,144 +347,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/07/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/03/07/hello-world/" itemprop="url">Gawain's Blog</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-07T00:44:28+08:00">
-                2020-03-07
-              </time>
+              <a href="/2020/03/07/hello-world/" rel="next" title="Gawain's Blog">
+                <i class="fa fa-chevron-left"></i> Gawain's Blog
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -493,10 +378,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -504,6 +390,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -524,8 +414,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -567,6 +466,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#WIN10迁移C盘和崩溃还原系统总结"><span class="nav-number">1.</span> <span class="nav-text">WIN10迁移C盘和崩溃还原系统总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#C盘Users迁移其他盘"><span class="nav-number">1.1.</span> <span class="nav-text">C盘Users迁移其他盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备份以及还原系统"><span class="nav-number">1.2.</span> <span class="nav-text">备份以及还原系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前提"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">前提</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统还原"><span class="nav-number">1.3.</span> <span class="nav-text">系统还原</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -707,6 +622,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
