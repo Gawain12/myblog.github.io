@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/03/07/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://gawain.work/categories/index.html</loc>
+    
+    <lastmod>2020-03-06T18:54:27.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gawain.work/2020/03/07/%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</loc>
     
     <lastmod>2020-03-06T17:29:33.926Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/03/07/hello-world/</loc>
+    <loc>https://gawain.work/2020/03/07/hello-world/</loc>
     
     <lastmod>2020-03-06T17:06:56.459Z</lastmod>
     
